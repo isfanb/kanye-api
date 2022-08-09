@@ -1,0 +1,12 @@
+<h3>{{displayData}}</h3>
+<button (click)="getApi()">Get Quote</button>
+<button (click)="addFavorite()">Add Favorite</button>
+<p>{{addQuote | json}}</p>
+<form action="formInput" (submit)="addYourQuote()">
+    <input type="text" name="formInput" id="formInput" placeholder="Enter your quote..." [(ngModel)]="inputYourOwn">
+    <input type="submit" value="Add">
+</form>
+<p>{{addYourOwn | json}}</p>
+
+
+<br><br>
